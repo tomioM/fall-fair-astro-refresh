@@ -1,0 +1,12 @@
+---
+import { client } from '../../.tina/__generated__/client'
+import { HeroSubhead } from './HeroSubhead'
+
+const response = await client.queries.page({relativePath: "index.yaml"})
+---
+
+<div class="hi-there">
+    <p>I'm a astro component</p>
+    <p>fjfdk</p>
+    <HeroSubhead client:tina {...response} />
+</div>

@@ -1,7 +1,7 @@
 import { useTina } from "tinacms/dist/react";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 
-export const MyComponent = (props) => {
+export const Main = (props) => {
   const { data: { page } } = useTina(props);
 
   return ( 
