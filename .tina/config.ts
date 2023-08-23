@@ -3,7 +3,8 @@ import { defineConfig } from "tinacms";
 const branch =
   process.env.NEXT_PUBLIC_TINA_BRANCH ||
   process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF ||
-  process.env.HEAD
+  process.env.HEAD ||
+  'main'
 
 export default defineConfig({
   clientId: "e04b4f16-a16e-41d2-bb70-70f5d743e540", // Get this from tina.io
