@@ -13,7 +13,7 @@ export const Main = (props) => {
           <a href="#hero" className="logo w-inline-block">
             <h2 className="logo-heading simple" data-tina-field={tinaField(page, 'title')}>{page.title}</h2>
             <h2 className="logo-heading detailed">
-              <span className="text-span">{page.title} {page.year}</span>
+              <span className="text-span"><span data-tina-field={tinaField(page, 'title')}>{page.title}</span> <span>{page.year}</span></span>
             </h2>
           </a>
         </div>
