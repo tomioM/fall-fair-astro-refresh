@@ -1,0 +1,138 @@
+---
+import { client } from '../../.tina/__generated__/client'
+import { MyComponent } from '../components/main'
+
+import '../styles/fall-fair.webflow.css'
+import '../styles/normalize.css'
+import '../styles/webflow.css'
+
+const response = await client.queries.page({relativePath: "index.yaml"})
+---
+<head>
+	<meta charset="utf-8" />
+	<title>Gabriola Fall Fair</title>
+	<meta
+		content="A one-day celebration of harvest and fall equinox on Gabriola island. COMPETIONS, SQUASH RACES and MORE, at the Gabriola Commons! Thank you for joining us in 2021"
+		name="description"
+	/>
+	<meta content="Gabriola Fall Fair" property="og:title" />
+	<meta
+		content="A one-day celebration of harvest and fall equinox on Gabriola island. COMPETIONS, SQUASH RACES and MORE, at the Gabriola Commons! Thank you for joining us in 2021"
+		property="og:description"
+	/>
+	<meta
+		content="https://uploads-ssl.webflow.com/612bf83c101af90c9c04c39a/612c223908e8df7ed7210c2f_29426601966_bf199e55c4_o.jpeg"
+		property="og:image"
+	/>
+	<meta content="Gabriola Fall Fair" property="twitter:title" />
+	<meta
+		content="A one-day celebration of harvest and fall equinox on Gabriola island. COMPETIONS, SQUASH RACES and MORE, at the Gabriola Commons! Thank you for joining us in 2021"
+		property="twitter:description"
+	/>
+	<meta
+		content="https://uploads-ssl.webflow.com/612bf83c101af90c9c04c39a/612c223908e8df7ed7210c2f_29426601966_bf199e55c4_o.jpeg"
+		property="twitter:image"
+	/>
+	<meta property="og:type" content="website" />
+	<meta content="summary_large_image" name="twitter:card" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link href="css/normalize.css" rel="stylesheet" type="text/css" />
+	<link href="css/webflow.css" rel="stylesheet" type="text/css" />
+	<link href="css/fall-fair.webflow.css" rel="stylesheet" type="text/css" />
+	<style>
+		@media (min-width: 992px) {
+		html.w-mod-js:not(.w-mod-ix)
+			[data-w-id="29ee5900-ec6d-1893-983c-4736b43dade9"] {
+			color: rgb(45, 44, 46);
+		}
+		html.w-mod-js:not(.w-mod-ix)
+			[data-w-id="48a523e7-0867-3fed-29fb-0ed7ecc65d9a"] {
+			opacity: 0;
+		}
+		}
+		@media (max-width: 991px) and (min-width: 768px) {
+		html.w-mod-js:not(.w-mod-ix)
+			[data-w-id="29ee5900-ec6d-1893-983c-4736b43dade9"] {
+			color: rgb(45, 44, 46);
+		}
+		html.w-mod-js:not(.w-mod-ix)
+			[data-w-id="48a523e7-0867-3fed-29fb-0ed7ecc65d9a"] {
+			opacity: 0;
+		}
+		}
+		@media (max-width: 767px) and (min-width: 480px) {
+		html.w-mod-js:not(.w-mod-ix)
+			[data-w-id="29ee5900-ec6d-1893-983c-4736b43dade9"] {
+			color: rgb(45, 44, 46);
+		}
+		}
+	</style>
+	<script
+		src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
+		type="text/javascript"
+	></script>
+	<script type="text/javascript">
+		WebFont.load({
+		google: {
+			families: [
+			"Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic",
+			"Open Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic",
+			"Lato:100,100italic,300,300italic,400,400italic,700,700italic,900,900italic",
+			"Shrikhand:regular",
+			],
+		},
+		});
+	</script>
+	<!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
+	<script type="text/javascript">
+		!(function (o, c) {
+		var n = c.documentElement,
+			t = " w-mod-";
+		(n.className += t + "js"),
+			("ontouchstart" in o ||
+			(o.DocumentTouch && c instanceof DocumentTouch)) &&
+			(n.className += t + "touch");
+		})(window, document);
+	</script>
+	<link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
+	<link href="webclip.png" rel="apple-touch-icon" />
+	<meta name="theme-color" content="#fdfce4" />
+	<style>
+		.expand-less-icon {
+		pointer-events: none;
+		}
+		.slider {
+		display: block;
+		-webkit-appearance: none;
+		background-color: #8cd859;
+		width: 100%;
+		height: 5px;
+		border-radius: 5px;
+		margin: 0 auto;
+		outline: 0;
+		}
+		.slider::-webkit-slider-thumb {
+		-webkit-appearance: none;
+		background-color: #8cd859;
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+		border: 2px solid #fffeed;
+		cursor: pointer;
+		transition: 0.3s ease-in-out;
+		}
+		.slider::-webkit-slider-thumb:hover {
+		background-color: #fffeed;
+		border: 2px solid #8cd859;
+		}
+		input[type="range"]::-webkit-slider-thumb:active {
+		transform: scale(1.6);
+		}
+	</style>
+</head>
+<main>
+	<!-- No way for visual editing to work with .astro components -->
+  <!-- <pre  style={{margin: '100px auto', width: '1000px'}}>{JSON.stringify(response.data.post.body, null, 2)}</pre> -->
+	<!-- Uncomment React version to see Tina working -->
+	<MyComponent client:tina {...response} />
+</main>

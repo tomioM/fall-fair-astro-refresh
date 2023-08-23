@@ -1,0 +1,23 @@
+{
+  "name": "@example/basics",
+  "type": "module",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "npx tinacms dev -c \"astro dev\"",
+    "start": "astro dev",
+    "build": "npx tinacms build --local --skip-cloud-checks & sleep 4 && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/react": "^2.2.1",
+    "@tinacms/cli": "^1.5.26",
+    "@types/react": "^18.2.15",
+    "@types/react-dom": "^18.2.7",
+    "astro": "^2.8.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tinacms": "^1.5.17"
+  }
+}
