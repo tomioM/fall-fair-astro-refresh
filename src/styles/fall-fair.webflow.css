@@ -224,8 +224,8 @@ li {
   grid-template-columns: 1fr 1fr;
   -ms-grid-rows: auto auto;
   grid-template-rows: auto auto;
-  background-image: url('../images/mask-shape.png'), -webkit-gradient(linear, left top, left bottom, from(rgba(126, 204, 91, 0.85)), to(rgba(126, 204, 91, 0.85))), url('images/hero-background.jpeg');
-  background-image: url('../images/mask-shape.png'), linear-gradient(180deg, rgba(126, 204, 91, 0.85), rgba(126, 204, 91, 0.85)), url('images/hero-background.jpeg');
+  background-image: url('/images/mask-shape.png'), -webkit-gradient(linear, left top, left bottom, from(rgba(126, 204, 91, 0.85)), to(rgba(126, 204, 91, 0.85))), url('/images/hero-background.jpeg');
+  background-image: url('/images/mask-shape.png'), linear-gradient(180deg, rgba(126, 204, 91, 0.85), rgba(126, 204, 91, 0.85)), url('/images/hero-background.jpeg');
   background-position: 50% 100%, 0px 0px, 0px 0px;
   background-size: cover, auto, cover;
   background-repeat: no-repeat, repeat, repeat;
@@ -1743,8 +1743,8 @@ li {
   }
 
   .section.hero {
-    background-image: url('../images/mask-shape.png'), -webkit-gradient(linear, left top, left bottom, from(rgba(126, 204, 91, 0.85)), to(rgba(126, 204, 91, 0.85))), url('images/hero-background.jpeg');
-    background-image: url('../images/mask-shape.png'), linear-gradient(180deg, rgba(126, 204, 91, 0.85), rgba(126, 204, 91, 0.85)), url('images/hero-background.jpeg');
+    background-image: url('/images/mask-shape.png'), -webkit-gradient(linear, left top, left bottom, from(rgba(126, 204, 91, 0.85)), to(rgba(126, 204, 91, 0.85))), url('/images/hero-background.jpeg');
+    background-image: url('/images/mask-shape.png'), linear-gradient(180deg, rgba(126, 204, 91, 0.85), rgba(126, 204, 91, 0.85)), url('/images/hero-background.jpeg');
     background-position: 50% 100%, 0px 0px, 0px 0px;
     background-size: cover, auto, cover;
     background-repeat: no-repeat, repeat, repeat;
