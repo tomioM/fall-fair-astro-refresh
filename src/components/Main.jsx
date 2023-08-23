@@ -109,104 +109,7 @@ export const Main = (props) => {
           </div>
           <div>
             <div className="rich-text w-richtext">
-              <p><strong>Exhibition Details:</strong></p>
-              <p>+ All submissions must be Gabriola made or grown.<br /></p>
-              <p>
-                + You can enter as many categories as you&#x27;d like..<br />
-              </p>
-              <p>
-                + There are open categories for Junior Maker, Baker, and Farmer
-                for our young creators! <br />
-              </p>
-              <p>
-                + Bring entries to the Commons on Sunday, Sept 18th between
-                9-11am.<br />
-              </p>
-              <p>
-                + Pre-registration is not required. We&#x27;ll have forms on
-                site for you to add info.
-              </p>
-              <p>
-                + All first place peeps will receive a ribbon handmade by our
-                volunteer team (we hope to have enough made for 2nd and 3rd
-                too!)<br />
-              </p>
-              <p>
-                + We&#x27;ll be announcing category winners throughout the event
-                (12-6pm)<br />
-              </p>
-              <p>
-                + Fair attendees will receive stickers to assign to their top
-                picks. We also have an awesome roster of volunteer judges.
-              </p>
-              <p>Coordinator: </p>
-              <p>maximk7@gmail.com</p>
-              <p>‍</p>
-              <p>
-                <strong>COMPETITION CATEGORIES</strong>
-                <a
-                  href="documents/Gabriola-Fall-Fair-Exhibition-Categories-2021.pdf"
-                  >Download PDF</a
-                >
-              </p>
-              <p><strong>Crafts</strong></p>
-              <ol role="list">
-                <li>Up-cycled</li>
-                <li>Sustainably-sourced nature crafts</li>
-                <li>Fibre Art</li>
-                <li>Pottery</li>
-                <li>Woodwork</li>
-                <li>Veggie Monsters</li>
-                <li>Junior Maker<br /></li>
-              </ol>
-              <p><strong>Flowers</strong></p>
-              <ol start="8" role="list">
-                <li>Mixed Bouquet</li>
-                <li>Largest single bloom</li>
-                <li>Cultivated native species arrangement</li>
-                <li>Dahlias</li>
-                <li>Sunflowers</li>
-                <li>Weird and wacky (unique beauty)<br /></li>
-              </ol>
-              <p><strong>Baked &amp; Preserved</strong></p>
-              <ol start="14" role="list">
-                <li>Pies</li>
-                <li>Bread</li>
-                <li>Cake</li>
-                <li>Cookies</li>
-                <li>Gluten-free Vegan</li>
-                <li>Jams and Jellies</li>
-                <li>Most innovative</li>
-                <li>Tastiest topping (savory)</li>
-                <li>Honey</li>
-                <li>Junior Baker<br /></li>
-              </ol>
-              <p><strong>Veggies &amp; Fruits</strong></p>
-              <ol start="24" role="list">
-                <li>Silly or seductive</li>
-                <li>Heavyweight champion</li>
-                <li>Largest diameter</li>
-                <li>Spectacular squash</li>
-                <li>Edible bouquet</li>
-                <li>Rockin’ roots</li>
-                <li>Perfectly imperfect fruit</li>
-                <li>Berry bowl</li>
-                <li>Terrific tomatoes</li>
-                <li>Exotic fruits</li>
-                <li>A+ Apples</li>
-                <li>Junior Farmer<br /></li>
-              </ol>
-              <p><strong>And…</strong></p>
-              <ol start="36" role="list">
-                <li>Fabulous fungi</li>
-                <li>Eggceptional eggs</li>
-                <li>Celebrity look-alike scarecrow</li>
-                <li>Miniature scarecrow</li>
-                <li>Home brew</li>
-                <li>Best bud (cannabis)</li>
-                <li>Harvest medley basket</li>
-              </ol>
-              <p>‍</p>
+              <TinaMarkdown content={page.exhibition.text} />
             </div>
           </div>
         </div>
@@ -236,93 +139,25 @@ export const Main = (props) => {
         <h1 id="heading-title" className="heading-2">Call Outs</h1>
         <div className="row-wrap">
           <div className="row-header-wrap">
-            <h2 className="row-header blue">squash race!</h2>
+            <h2 className="row-header blue">{page.race.heading}</h2>
             <p></p>
           </div>
           <div>
             <div className="rich-text w-richtext">
-              <p><strong>Squash Race Guidelines</strong></p>
-              <ul role="list">
-                <li>
-                  Racetrack is a 24&#x27; long downhill slope. Squash racers are
-                  gravity-powered.
-                </li>
-                <li>
-                  Make a racer at home, using wheels and whatever materials and
-                  decorations you can find.
-                  <strong
-                    >The maximum size for the wheelbase is 18&quot; wide and
-                    16&quot; long.</strong
-                  >
-                </li>
-                <li>
-                  Didn&#x27;t make a racer ahead of time? No problem! Racecar
-                  makings and some donated squashes available day-of.  Please
-                  bring extra for other racers if you have them!
-                </li>
-                <li>
-                  Races begin 2:30pm. Detailed schedule will be posted onsite.
-                </li>
-              </ul>
-              <br />
-              <p><strong>Race Master:</strong></p>
-              <p>
-                ‍<a href="mailto:Linda.Nielson@viu.ca"
-                  >jeff@humannaturecounselling.ca</a
-                >
-              </p>
-              <br />
-              <p><strong>Categories:</strong></p>
-              <ol role="list">
-                <li><strong>Youth </strong>(self-identified)</li>
-                <li>
-                  <strong>&quot;90% Squash&quot;</strong> -for the pure squash
-                  racer, using the squash as the chassis:) Open to all-ages
-                </li>
-                <li><strong>Open </strong>- anything goes, all-ages</li>
-              </ol>
+              <TinaMarkdown content={page.race.text} />
             </div>
           </div>
         </div>
         <div className="row-wrap">
           <div className="row-header-wrap">
             <h2 className="row-header blue">
-              CALL FOR BOOTHS: VENDORS, ARTISANS, COMMUNITY GROUPS
+              {page.booths.heading}
             </h2>
             <p>Contact: maximk7@gmail.com</p>
           </div>
           <div>
             <div className="rich-text w-richtext">
-              <ul role="list">
-                <li>
-                  You bring everything you need. Wifi available, but no tables,
-                  tents, power or water supplied.
-                </li>
-                <li>We want this event to be a lot of fun and interactive.</li>
-                <li>
-                  We’re trying to create a “Midway” feel. We strongly encourage
-                  you to create an all-ages game for your booth! (This could
-                  also be used as a fundraiser for your group, or attract people
-                  to your business.)
-                </li>
-                <li>
-                  Registration is $20 for displays, demos, info booths / $30 if
-                  you are selling something.
-                </li>
-                <li>
-                  Please allow some time after the event to help with the
-                  general clean up.
-                </li>
-                <li>
-                  You will be given a space on the day-of during setup (10:30am
-                  - 12pm).
-                </li>
-                <li>
-                  Email
-                  <a href="mailto:maximk7@gmail.com">maximk7@gmail.com</a> to
-                  secure a space.
-                </li>
-              </ul>
+              <TinaMarkdown content={page.booths.text} />
             </div>
           </div>
         </div>
