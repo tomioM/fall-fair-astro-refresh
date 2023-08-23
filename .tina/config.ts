@@ -62,6 +62,74 @@ export default defineConfig({
               component: "textarea"
             }
           },
+          {
+            type: "object",
+            name: "exhibition",
+            label: "Exhibition",
+            fields: [
+              {
+                type: "string",
+                name: "heading",
+                label: "Heading",
+              },
+              {
+                type: "rich-text",
+                name: "text",
+                label: "Text",
+              },
+            ]
+          },
+          {
+            type: "object",
+            name: "competition",
+            label: "Competition",
+            fields: [
+              {
+                type: "string",
+                name: "heading",
+                label: "Heading",
+              },
+              {
+                type: "rich-text",
+                name: "text",
+                label: "Text",
+              },
+            ]
+          },
+          {
+            type: "object",
+            name: "race",
+            label: "Squash Race",
+            fields: [
+              {
+                type: "string",
+                name: "heading",
+                label: "Heading",
+              },
+              {
+                type: "rich-text",
+                name: "text",
+                label: "Text",
+              },
+            ]
+          },
+          {
+            type: "object",
+            name: "booths",
+            label: "Call for Booths",
+            fields: [
+              {
+                type: "string",
+                name: "heading",
+                label: "Heading",
+              },
+              {
+                type: "rich-text",
+                name: "text",
+                label: "Text",
+              },
+            ]
+          },
         ],
       },
     ],
