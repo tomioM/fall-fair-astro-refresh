@@ -1,7 +1,7 @@
 // .tina/config.ts
-import { defineStaticConfig } from "tinacms";
+import { defineConfig } from "tinacms";
 var branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
-var config_default = defineStaticConfig({
+var config_default = defineConfig({
   branch,
   clientId: "4e2aaa09-0e3f-4341-ac6f-e7951adb59b6",
   // Get this from tina.io

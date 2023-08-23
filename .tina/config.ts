@@ -1,9 +1,9 @@
-import { defineStaticConfig } from "tinacms";
+import { defineConfig } from "tinacms";
 
 // Your hosting provider likely exposes this as an environment variable
 const branch = process.env.HEAD || process.env.VERCEL_GIT_COMMIT_REF || "main";
 
-export default defineStaticConfig({
+export default defineConfig({
   branch,
   clientId: "4e2aaa09-0e3f-4341-ac6f-e7951adb59b6", // Get this from tina.io
   token: "e1f74df57fab2c19119caf12bfe55ecfa044cef9", // Get this from tina.io
