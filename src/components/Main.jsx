@@ -1,4 +1,4 @@
-import { useTina } from "tinacms/dist/react";
+import { useTina, tinaField } from "tinacms/dist/react";
 import { TinaMarkdown } from "tinacms/dist/rich-text";
 
 export const Main = (props) => {
@@ -11,7 +11,7 @@ export const Main = (props) => {
       <div className="nav-container">
         <div>
           <a href="#hero" className="logo w-inline-block">
-            <h2 className="logo-heading simple">{page.title}</h2>
+            <h2 className="logo-heading simple" data-tina-field={tinaField(page, 'title')}>{page.title}</h2>
             <h2 className="logo-heading detailed">
               <span className="text-span">{page.title} {page.year}</span>
             </h2>
@@ -59,13 +59,13 @@ export const Main = (props) => {
             />
             <div className="qf-text">A Gabriola Commons tradition!<br /></div>
           </div>
-          <h1 id="heading-title" className="hero-heading">
+          <h1 id="heading-title" className="hero-heading" data-tina-field={tinaField(page, 'title')}>
             {page.title}
           </h1>
-          <h3 className="sub-heading">
+          <h3 className="sub-heading" data-tina-field={tinaField(page, 'subheading')}>
             {page.subheading}
           </h3>
-          <p className="paragraph">
+          <p className="paragraph" data-tina-field={tinaField(page, 'description')}>
             {page.description}
           </p>
           <div>
@@ -105,10 +105,10 @@ export const Main = (props) => {
         <h1 id="heading-title" className="heading-2">Call Outs</h1>
         <div className="row-wrap single">
           <div className="row-header-wrap">
-            <h2 className="row-header orange">{page.exhibition.heading}<br />‍</h2>
+            <h2 className="row-header orange" data-tina-field={tinaField(page, 'exhibition.heading')}>{page.exhibition.heading}<br />‍</h2>
           </div>
           <div>
-            <div className="rich-text w-richtext">
+            <div className="rich-text w-richtext" data-tina-field={tinaField(page, 'exhibition.text')}>
               <TinaMarkdown content={page.exhibition.text} />
             </div>
           </div>
