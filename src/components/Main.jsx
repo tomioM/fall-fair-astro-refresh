@@ -105,7 +105,7 @@ export const Main = (props) => {
         <h1 id="heading-title" className="heading-2">Call Outs</h1>
         <div className="row-wrap single">
           <div className="row-header-wrap">
-            <h2 className="row-header orange" data-tina-field={tinaField(page, 'exhibition.heading')}>{page.exhibition.heading}<br />‍</h2>
+            <h2 className="row-header orange" data-tina-field={tinaField(page, 'exhibition.heading')}>{page.exhibition.heading}‍</h2>
           </div>
           <div>
             <div className="rich-text w-richtext" data-tina-field={tinaField(page, 'exhibition.text')}>
@@ -115,7 +115,7 @@ export const Main = (props) => {
         </div>
         <div className="row-wrap single">
           <div className="row-header-wrap">
-            <h2 className="row-header orange" data-tina-field={tinaField(page, 'competition.heading')}>{page.competition.heading}<br />‍</h2>
+            <h2 className="row-header orange" data-tina-field={tinaField(page, 'competition.heading')}>{page.competition.heading}‍</h2>
           </div>
           <div>
             <div className="rich-text w-richtext" data-tina-field={tinaField(page, 'competition.text')}>
