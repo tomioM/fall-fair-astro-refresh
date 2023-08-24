@@ -51,6 +51,11 @@ export default defineConfig({
           },
           {
             type: "string",
+            name: "byline",
+            label: "Byline",
+          },
+          {
+            type: "string",
             name: "subheading",
             label: "Subheading",
             ui: {

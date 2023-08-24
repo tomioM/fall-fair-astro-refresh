@@ -57,7 +57,7 @@ export const Main = (props) => {
               alt=""
               className="_wf-logo"
             />
-            <div className="qf-text">A Gabriola Commons tradition!<br /></div>
+            <div className="qf-text" data-tina-field={tinaField(page, 'byline')}>{page.byline}<br /></div>
           </div>
           <h1 id="heading-title" className="hero-heading" data-tina-field={tinaField(page, 'title')}>
             {page.title}
