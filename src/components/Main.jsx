@@ -113,6 +113,16 @@ export const Main = (props) => {
             </div>
           </div>
         </div>
+        <div className="row-wrap single">
+          <div className="row-header-wrap">
+            <h2 className="row-header orange" data-tina-field={tinaField(page, 'competition.heading')}>{page.competition.heading}<br />‍</h2>
+          </div>
+          <div>
+            <div className="rich-text w-richtext" data-tina-field={tinaField(page, 'competition.text')}>
+              <TinaMarkdown content={page.competition.text} />
+            </div>
+          </div>
+        </div>
         <img
           src="images/scarecrow.png"
           loading="lazy"
@@ -137,26 +147,25 @@ export const Main = (props) => {
       ></div>
       <div className="container call-outs">
         <h1 id="heading-title" className="heading-2">Call Outs</h1>
-        <div className="row-wrap">
+        <div className="row-wrap single">
           <div className="row-header-wrap">
-            <h2 className="row-header blue">{page.race.heading}</h2>
+            <h2 className="row-header blue" data-tina-field={tinaField(page, 'race.heading')}>{page.race.heading}</h2>
             <p></p>
           </div>
           <div>
-            <div className="rich-text w-richtext">
+            <div className="rich-text w-richtext" data-tina-field={tinaField(page, 'race.text')}>
               <TinaMarkdown content={page.race.text} />
             </div>
           </div>
         </div>
-        <div className="row-wrap">
+        <div className="row-wrap single">
           <div className="row-header-wrap">
-            <h2 className="row-header blue">
+            <h2 className="row-header blue" data-tina-field={tinaField(page, 'booths.heading')}>
               {page.booths.heading}
             </h2>
-            <p>Contact: maximk7@gmail.com</p>
           </div>
           <div>
-            <div className="rich-text w-richtext">
+            <div className="rich-text w-richtext" data-tina-field={tinaField(page, 'booths.text')}>
               <TinaMarkdown content={page.booths.text} />
             </div>
           </div>

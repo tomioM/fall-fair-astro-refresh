@@ -32,7 +32,7 @@ h3 {
   margin-bottom: 20px;
   font-family: Shrikhand, sans-serif;
   font-size: 2em;
-  line-height: 30px;
+  line-height: 1;
   font-weight: 600;
   text-shadow: 2px 2px 0 #5c34d1;
 }
@@ -541,6 +541,7 @@ li {
   -ms-flex-align: center;
   align-items: center;
   text-decoration: none;
+  max-width: 17vmax;
 }
 
 .logo.w--current {
@@ -676,6 +677,7 @@ li {
 }
 
 .row-wrap.single {
+  max-width: 800px;
   display: block;
 }
 
@@ -786,13 +788,12 @@ li {
   margin-top: 0px;
   margin-bottom: 0px;
   font-family: Shrikhand, sans-serif;
-  color: #fe9148;
+  color: #fffeed;
   font-size: 1.6em;
   text-decoration: none;
 }
 
 .logo-heading.detailed {
-  color: #fe9148;
   font-size: 2.3vw;
 }
 
@@ -900,7 +901,7 @@ li {
 }
 
 .sub-heading {
-  letter-spacing: 1.4px;
+  /* letter-spacing: 1.4px; */
   text-shadow: 4px 4px 0 #5c34d1;
 }
 
@@ -921,22 +922,16 @@ li {
   text-align: center;
 }
 
-.row-header {
-  text-transform: lowercase;
-}
 
-.row-header.orange {
+/* .row-header.orange {
   color: #fe9148;
-}
+} */
 
-.row-header.blue {
+/* .row-header.blue {
   color: #5c34d1;
-}
+} */
 
-.row-header.green {
-  margin-bottom: 40px;
-  color: #8cd859;
-}
+
 
 .row-header.graphite {
   color: #2d2c2e;
