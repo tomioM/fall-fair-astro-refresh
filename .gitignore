@@ -22,5 +22,3 @@ pnpm-debug.log*
 node_modules
 # Local Netlify folder
 .netlify
-
-.tina/__generated__
