@@ -2,11 +2,11 @@
 import { defineConfig } from "tinacms";
 var branch = process.env.NEXT_PUBLIC_TINA_BRANCH || process.env.NEXT_PUBLIC_VERCEL_GIT_COMMIT_REF || process.env.HEAD || "main";
 var config_default = defineConfig({
+  branch,
   clientId: "e04b4f16-a16e-41d2-bb70-70f5d743e540",
   // Get this from tina.io
   token: "89c08aaf161ed4f3a24c8a3f1017933125a5dc16",
   // Get this from tina.io
-  branch,
   build: {
     outputFolder: "admin",
     publicFolder: "public"
@@ -45,6 +45,11 @@ var config_default = defineConfig({
             type: "number",
             name: "year",
             label: "Year"
+          },
+          {
+            type: "string",
+            name: "byline",
+            label: "Byline"
           },
           {
             type: "string",
