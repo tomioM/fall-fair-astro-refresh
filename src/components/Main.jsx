@@ -174,47 +174,29 @@ export const Main = (props) => {
           <div>
             <h2 className="footer-heading-2">send us a message</h2>
             <ul role="list" className="w-list-unstyled">
-              <li className="list-item">
-                <div className="text-block-11">Email:</div>
-                <a
-                  href="mailto:maximk7@gmail.com?subject=Hey!"
-                  className="footer-link"
-                  >maximk7@gmail.com</a
-                >
-              </li>
+              {
+                page.footer.contacts.map(item => (
+                  <li className="list-item">
+                    <div className="text-block-11" data-tina-field={tinaField(item, 'heading')}>{item.heading}</div>
+                    <a
+                      href={item.url}
+                      className="footer-link"
+                      >{item.name}</a>
+                  </li>
+                ))
+              }
             </ul>
           </div>
           <div>
             <h2 className="footer-heading-2">Credits</h2>
             <ul role="list" className="w-list-unstyled">
-              <li className="list-item">
-                <div className="text-block-11">Photo Elements</div>
-                <a
-                  href="https://www.flickr.com/photos/gabriolaisland/"
-                  className="footer-link"
-                  >Bill Pope,</a
-                >
-                <a href="#" className="footer-link dead"> Jinny Hayes</a>
-              </li>
-              <li className="list-item">
-                <div className="text-block-11">Website:</div>
-                <a href="mailto:tomiowm.design@gmail.com" className="footer-link"
-                  >Tomio Miyagawa</a
-                >
-              </li>
+
             </ul>
           </div>
           <div>
             <h2 className="footer-heading-2">Social media</h2>
             <ul role="list" className="w-list-unstyled">
-              <li className="list-item">
-                <a
-                  href="https://www.facebook.com/events/1339381806789423"
-                  target="_blank"
-                  className="footer-link"
-                  >Facebook</a
-                >
-              </li>
+
             </ul>
           </div>
         </div>

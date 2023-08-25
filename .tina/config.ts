@@ -198,6 +198,175 @@ export default defineConfig({
               },
             ]
           },
+          {
+            label: "Footer",
+            name: "footer",
+            type: "object",
+            fields: [
+              {
+                label: "Contacts",
+                name: "contacts",
+                type: "object",
+                list: true,
+                ui: {
+                  // This allows the customization of the list item UI
+                  // Data can be accessed by item?.<Name of field>
+                  itemProps: (item) => {
+                    return { label: `${item?.heading}`}
+                  },
+                  // Setting a default will auto-populate new items with the given values
+                  defaultItem: {
+                    heading: "Email",
+                  }
+                },
+                fields: [
+                  {
+                    label: "Title",
+                    name: "heading",
+                    type: "string"
+                  },
+                  {
+                    label: "Links",
+                    name: "links",
+                    type: "object",
+                    list: true,
+                    ui: {
+                      // This allows the customization of the list item UI
+                      // Data can be accessed by item?.<Name of field>
+                      itemProps: (item) => {
+                        return { label: `${item?.name}  ( ${item?.url} ) `}
+                      },
+                      // Setting a default will auto-populate new items with the given values
+                      defaultItem: {
+                        url: "https://www.facebook.com/",
+                        name: "Facebook",
+                      }
+                    },
+                    fields: [
+                      {
+                        label: "Name",
+                        name: "name",
+                        type: "string"
+                      },
+                      {
+                        label: "URL",
+                        name: "url",
+                        type: "string"
+                      },
+                    ]
+                  }
+                ]
+              },
+              {
+                label: "Credits",
+                name: "credits",
+                type: "object",
+                list: true,
+                ui: {
+                  // This allows the customization of the list item UI
+                  // Data can be accessed by item?.<Name of field>
+                  itemProps: (item) => {
+                    return { label: `${item?.heading}`}
+                  },
+                  // Setting a default will auto-populate new items with the given values
+                  defaultItem: {
+                    heading: "Role",
+                  }
+                },
+                fields: [
+                  {
+                    label: "Title",
+                    name: "heading",
+                    type: "string"
+                  },
+                  {
+                    label: "Links",
+                    name: "links",
+                    type: "object",
+                    list: true,
+                    ui: {
+                      // This allows the customization of the list item UI
+                      // Data can be accessed by item?.<Name of field>
+                      itemProps: (item) => {
+                        return { label: `${item?.name}  ( ${item?.url} ) `}
+                      },
+                      // Setting a default will auto-populate new items with the given values
+                      defaultItem: {
+                        url: "https://www.facebook.com/",
+                        name: "Facebook",
+                      }
+                    },
+                    fields: [
+                      {
+                        label: "Name",
+                        name: "name",
+                        type: "string"
+                      },
+                      {
+                        label: "URL",
+                        name: "url",
+                        type: "string"
+                      },
+                    ]
+                  }
+                ]
+              },
+              {
+                label: "Socials",
+                name: "socials",
+                type: "object",
+                list: true,
+                ui: {
+                  // This allows the customization of the list item UI
+                  // Data can be accessed by item?.<Name of field>
+                  itemProps: (item) => {
+                    return { label: `${item?.heading}`}
+                  },
+                  // Setting a default will auto-populate new items with the given values
+                  defaultItem: {
+                    heading: "",
+                  }
+                },
+                fields: [
+                  {
+                    label: "Title",
+                    name: "heading",
+                    type: "string"
+                  },
+                  {
+                    label: "Links",
+                    name: "links",
+                  type: "object",
+                  list: true,
+                  ui: {
+                      // This allows the customization of the list item UI
+                      // Data can be accessed by item?.<Name of field>
+                      itemProps: (item) => {
+                        return { label: `${item?.name}  ( ${item?.url} ) `}
+                      },
+                      // Setting a default will auto-populate new items with the given values
+                      defaultItem: {
+                        url: "https://www.facebook.com/",
+                        name: "Facebook",
+                      }
+                    },
+                    fields: [
+                      {
+                        label: "Name",
+                        name: "name",
+                        type: "string"
+                      },
+                      {
+                        label: "URL",
+                        name: "url",
+                          type: "string"
+                        },
+                      ]
+                  }
+                ]
+              },
+            ]
+          },
         ],
       },
     ],

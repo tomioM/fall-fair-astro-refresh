@@ -109,3 +109,16 @@ race:
 booths:
   heading: Call for Booths!
   text: "* You bring everything you need. Wifi available, but no tables, tents, power or water supplied.\n* We want this event to be a lot of fun and interactive.\n* We’re trying to create a “Midway” feel. We strongly encourage you to create an all-ages game for your booth! (This could also be used as a fundraiser for your group, or attract people to your business.)\n* Registration is $20 for displays, demos, info booths / $30 if you are selling something.\n* Please allow some time after the event to help with the general clean up.\n* You will be given a space on the day-of during setup (10:30am - 12pm).\n* Email\_[maximk7@gmail.com](mailto:maximk7@gmail.com)\_to secure a space.\n"
+footer:
+  contacts:
+    - heading: Email
+      links:
+        - name: x
+          url: x
+  credits:
+    - heading: Role
+      links:
+        - name: x
+          url: x
+  socials:
+    - heading: ''
