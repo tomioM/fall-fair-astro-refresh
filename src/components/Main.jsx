@@ -18,25 +18,16 @@ export const Main = (props) => {
           </a>
         </div>
         <div className="nav-right-wrapper">
-          <a
-            href="https://webflow.com/vimalanvijayasekaran"
-            target="_blank"
-            className="link cloneables"
-            >More cloneables</a
-          >
-          <a
-            href="https://www.facebook.com/gabriolacommons"
-            target="_blank"
-            className="link"
-            >Facebook</a
-          >
-          <a
-            href="https://www.gabriolacommons.ca/"
-            target="_blank"
-            className="link commons"
-            >Gabriola Commons</a
-          >
-          <a href="mailto:maximk7@gmail.com" className="link">Contact Us</a>
+          {
+            page.navLinks?.map(navLink => (
+              <a
+              href={navLink.url}
+              target="_blank"
+              className="link"
+              data-tina-field={tinaField(navLink, 'name')}
+              >{navLink.name}</a>
+            ))
+          }
         </div>
       </div>
     </nav>
@@ -70,15 +61,15 @@ export const Main = (props) => {
           </p>
           <div>
             {
-              page.heroLinks?.map(link => (
+              page.heroLinks?.map(heroLink => (
                 <a
                   data-w-id="29ee5900-ec6d-1893-983c-4736b43dade9"
-                  href={link?.url}
+                  href={heroLink?.url}
                   target="_blank"
                   className="button w-inline-block"
-                  data-tina-field={tinaField(link, 'name')}
+                  data-tina-field={tinaField(heroLink, 'name')}
                 >
-                  <div className="button-text">{link?.name}</div>
+                  <div className="button-text">{heroLink?.name}</div>
                   <div className="button-bg facebook"></div>
                 </a>
               ))
