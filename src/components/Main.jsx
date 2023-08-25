@@ -70,14 +70,15 @@ export const Main = (props) => {
           </p>
           <div>
             {
-              page.heroLinks?.map(links => (
+              page.heroLinks?.map(link => (
                 <a
                   data-w-id="29ee5900-ec6d-1893-983c-4736b43dade9"
-                  href={links?.url}
+                  href={link?.url}
                   target="_blank"
                   className="button w-inline-block"
+                  data-tina-field={tinaField(link, 'name')}
                 >
-                  <div className="button-text">{links?.name}</div>
+                  <div className="button-text">{link?.name}</div>
                   <div className="button-bg facebook"></div>
                 </a>
               ))
