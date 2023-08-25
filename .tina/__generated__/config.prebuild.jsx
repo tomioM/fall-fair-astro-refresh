@@ -86,13 +86,43 @@ var config_default = defineConfig({
             },
             fields: [
               {
-                label: "URL",
-                name: "url",
+                label: "Name",
+                name: "name",
                 type: "string"
               },
               {
+                label: "URL",
+                name: "url",
+                type: "string"
+              }
+            ]
+          },
+          {
+            label: "Navigation Buttons",
+            name: "navLinks",
+            type: "object",
+            list: true,
+            ui: {
+              // This allows the customization of the list item UI
+              // Data can be accessed by item?.<Name of field>
+              itemProps: (item) => {
+                return { label: `${item?.name}  ( ${item?.url} ) ` };
+              },
+              // Setting a default will auto-populate new items with the given values
+              defaultItem: {
+                url: "https://www.facebook.com/",
+                name: "Facebook"
+              }
+            },
+            fields: [
+              {
                 label: "Name",
                 name: "name",
+                type: "string"
+              },
+              {
+                label: "URL",
+                name: "url",
                 type: "string"
               }
             ]

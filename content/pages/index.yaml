@@ -7,8 +7,15 @@ description: >-
   booths, games, food, music, and YES the Gabriola Famous Squash Race! Fun for
   all ages.
 heroLinks:
-  - url: 'https://www.facebook.com/events/1339381806789423'
-    name: Facebook
+  - name: Facebook
+    url: 'https://www.facebook.com/events/1339381806789423'
+navLinks:
+  - name: Facebook
+    url: 'https://www.facebook.com/'
+  - name: Gabriola Commons
+    url: 'https://www.facebook.com/'
+  - name: Contact Us
+    url: 'mailto:maximk7@gmail.com'
 exhibition:
   heading: Exhibition Details
   text: >
