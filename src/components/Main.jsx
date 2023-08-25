@@ -69,15 +69,19 @@ export const Main = (props) => {
             {page.description}
           </p>
           <div>
-            <a
-              data-w-id="29ee5900-ec6d-1893-983c-4736b43dade9"
-              href="https://www.facebook.com/events/1339381806789423"
-              target="_blank"
-              className="button w-inline-block"
-            >
-              <div className="button-text">Facebook</div>
-              <div className="button-bg facebook"></div>
-            </a>
+            {
+              page.heroLinks?.map(links => (
+                <a
+                  data-w-id="29ee5900-ec6d-1893-983c-4736b43dade9"
+                  href={links?.url}
+                  target="_blank"
+                  className="button w-inline-block"
+                >
+                  <div className="button-text">{links?.name}</div>
+                  <div className="button-bg facebook"></div>
+                </a>
+              ))
+            }
           </div>
         </div>
         <div className="hero-image-wrapper">
