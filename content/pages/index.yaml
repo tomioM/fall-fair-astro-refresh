@@ -6,6 +6,9 @@ description: >-
   ‍A one-day celebration of harvest and fall equinox. Featuring an exhibition,
   booths, games, food, music, and YES the Gabriola Famous Squash Race! Fun for
   all ages.
+heroLinks:
+  - url: 'https://www.facebook.com/'
+    name: Facebook
 exhibition:
   heading: Exhibition Details
   text: >

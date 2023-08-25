@@ -68,6 +68,36 @@ var config_default = defineConfig({
             }
           },
           {
+            label: "Hero Buttons",
+            name: "heroLinks",
+            type: "object",
+            list: true,
+            ui: {
+              // This allows the customization of the list item UI
+              // Data can be accessed by item?.<Name of field>
+              itemProps: (item) => {
+                return { label: `${item?.name}  ( ${item?.url} ) ` };
+              },
+              // Setting a default will auto-populate new items with the given values
+              defaultItem: {
+                url: "https://www.facebook.com/",
+                name: "Facebook"
+              }
+            },
+            fields: [
+              {
+                label: "URL",
+                name: "url",
+                type: "string"
+              },
+              {
+                label: "Name",
+                name: "name",
+                type: "string"
+              }
+            ]
+          },
+          {
             type: "object",
             name: "exhibition",
             label: "Exhibition",
