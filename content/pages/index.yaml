@@ -112,13 +112,16 @@ booths:
 footer:
   contacts:
     - heading: Email
-      links:
-        - name: x
-          url: x
+      links: |
+        [maximk7@gmail.com](mailto:maximk7@gmail.com?subject=Hey!)
   credits:
-    - heading: Role
-      links:
-        - name: x
-          url: x
+    - heading: Photo Elements
+      links: |
+        [Bill Pope,](https://www.flickr.com/photos/gabriolaisland/) Jinny Hayes
+    - heading: Website
+      links: |
+        [Tomio Miyagawa](mailto:tomiowmiyagawa@gmail.com)
   socials:
     - heading: ''
+      links: |
+        [Facebook](https://www.facebook.com/events/1339381806789423)

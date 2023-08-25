@@ -174,29 +174,40 @@ export const Main = (props) => {
           <div>
             <h2 className="footer-heading-2">send us a message</h2>
             <ul role="list" className="w-list-unstyled">
-              {
-                page.footer.contacts.map(item => (
-                  <li className="list-item">
-                    <div className="text-block-11" data-tina-field={tinaField(item, 'heading')}>{item.heading}</div>
-                    <a
-                      href={item.url}
-                      className="footer-link"
-                      >{item.name}</a>
+            {
+              page.footer.contacts?.map(item => (
+                <li className="list-item" data-tina-field={tinaField(item, 'heading')}>
+                  <div className="text-block-11">{item.heading}</div>
+                  <TinaMarkdown content={item.links}/>
+                </li>
+              ))
+            }
+            </ul>
+          </div>
+          <div>
+            <h2 className="footer-heading-2">Credits</h2>
+            <ul role="list" className="w-list-unstyled">
+            {
+                page.footer.credits?.map(item => (
+                  <li className="list-item" data-tina-field={tinaField(item, 'heading')}>
+                    <div className="text-block-11">{item.heading}</div>
+                    <TinaMarkdown content={item.links}/>
                   </li>
                 ))
               }
             </ul>
           </div>
           <div>
-            <h2 className="footer-heading-2">Credits</h2>
-            <ul role="list" className="w-list-unstyled">
-
-            </ul>
-          </div>
-          <div>
             <h2 className="footer-heading-2">Social media</h2>
             <ul role="list" className="w-list-unstyled">
-
+            {
+                page.footer.socials?.map(item => (
+                  <li className="list-item" data-tina-field={tinaField(item, 'heading')}>
+                    <div className="text-block-11">{item.heading}</div>
+                    <TinaMarkdown content={item.links}/>
+                  </li>
+                ))
+              }
             </ul>
           </div>
         </div>

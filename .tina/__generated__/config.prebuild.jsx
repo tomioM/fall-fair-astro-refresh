@@ -201,7 +201,7 @@ var config_default = defineConfig({
             type: "object",
             fields: [
               {
-                label: "Contacts",
+                label: "Contacts Section",
                 name: "contacts",
                 type: "object",
                 list: true,
@@ -225,37 +225,12 @@ var config_default = defineConfig({
                   {
                     label: "Links",
                     name: "links",
-                    type: "object",
-                    list: true,
-                    ui: {
-                      // This allows the customization of the list item UI
-                      // Data can be accessed by item?.<Name of field>
-                      itemProps: (item) => {
-                        return { label: `${item?.name}  ( ${item?.url} ) ` };
-                      },
-                      // Setting a default will auto-populate new items with the given values
-                      defaultItem: {
-                        url: "https://www.facebook.com/",
-                        name: "Facebook"
-                      }
-                    },
-                    fields: [
-                      {
-                        label: "Name",
-                        name: "name",
-                        type: "string"
-                      },
-                      {
-                        label: "URL",
-                        name: "url",
-                        type: "string"
-                      }
-                    ]
+                    type: "rich-text"
                   }
                 ]
               },
               {
-                label: "Credits",
+                label: "Credit Section",
                 name: "credits",
                 type: "object",
                 list: true,
@@ -279,37 +254,12 @@ var config_default = defineConfig({
                   {
                     label: "Links",
                     name: "links",
-                    type: "object",
-                    list: true,
-                    ui: {
-                      // This allows the customization of the list item UI
-                      // Data can be accessed by item?.<Name of field>
-                      itemProps: (item) => {
-                        return { label: `${item?.name}  ( ${item?.url} ) ` };
-                      },
-                      // Setting a default will auto-populate new items with the given values
-                      defaultItem: {
-                        url: "https://www.facebook.com/",
-                        name: "Facebook"
-                      }
-                    },
-                    fields: [
-                      {
-                        label: "Name",
-                        name: "name",
-                        type: "string"
-                      },
-                      {
-                        label: "URL",
-                        name: "url",
-                        type: "string"
-                      }
-                    ]
+                    type: "rich-text"
                   }
                 ]
               },
               {
-                label: "Socials",
+                label: "Social Media Section",
                 name: "socials",
                 type: "object",
                 list: true,
@@ -333,32 +283,7 @@ var config_default = defineConfig({
                   {
                     label: "Links",
                     name: "links",
-                    type: "object",
-                    list: true,
-                    ui: {
-                      // This allows the customization of the list item UI
-                      // Data can be accessed by item?.<Name of field>
-                      itemProps: (item) => {
-                        return { label: `${item?.name}  ( ${item?.url} ) ` };
-                      },
-                      // Setting a default will auto-populate new items with the given values
-                      defaultItem: {
-                        url: "https://www.facebook.com/",
-                        name: "Facebook"
-                      }
-                    },
-                    fields: [
-                      {
-                        label: "Name",
-                        name: "name",
-                        type: "string"
-                      },
-                      {
-                        label: "URL",
-                        name: "url",
-                        type: "string"
-                      }
-                    ]
+                    type: "rich-text"
                   }
                 ]
               }
