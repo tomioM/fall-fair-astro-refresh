@@ -68,7 +68,7 @@ export const Main = (props) => {
           <p className="paragraph" data-tina-field={tinaField(page, 'description')}>
             {page.description}
           </p>
-          <div data-tina-field={tinaField(page, 'heroLinks')}>
+          <div>
             {
               page.heroLinks?.map(links => (
                 <a
