@@ -1,21 +1,21 @@
 title: Gabriola Fall Fair
 year: 2023
 byline: A Gabriola Commons Tradition!
-subheading: 'Sunday, September 17th, 12pm - 6pm the @Gabriola Commons.'
+subheading: 'Sunday, September 17th, 12pm - 6pm @Gabriola Commons.'
 description: >-
   ‍A one-day celebration of harvest and fall equinox. Featuring an exhibition,
   booths, games, food, music, and YES the Gabriola Famous Squash Race! Fun for
   all ages.
 heroLinks:
   - name: Facebook
-    url: 'https://www.facebook.com/events/1339381806789423'
+    url: 'https://www.facebook.com/'
 navLinks:
-  - name: Facebook
-    url: 'https://www.facebook.com/events/1339381806789423'
   - name: Gabriola Commons
     url: 'https://www.gabriolacommons.ca/'
   - name: Contact Us
     url: 'mailto:maximk7@gmail.com'
+  - name: Facebook
+    url: 'https://www.facebook.com/events/1339381806789423'
 exhibition:
   heading: Exhibition Details
   text: >
@@ -115,12 +115,12 @@ footer:
       links: |
         [maximk7@gmail.com](mailto:maximk7@gmail.com?subject=Hey!)
   credits:
-    - heading: Photo Elements
-      links: |
-        [Bill Pope,](https://www.flickr.com/photos/gabriolaisland/) Jinny Hayes
     - heading: Website
       links: |
         [Tomio Miyagawa](mailto:tomiowmiyagawa@gmail.com)
+    - heading: Photo Elements
+      links: |
+        [Bill Pope,](https://www.flickr.com/photos/gabriolaisland/) Jinny Hayes
   socials:
     - heading: ''
       links: |
