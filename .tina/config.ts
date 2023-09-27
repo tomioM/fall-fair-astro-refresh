@@ -45,34 +45,8 @@ export default defineConfig({
             isTitle: true,
           },
           {
-            type: 'number',
-            name: 'year',
-            label: 'Year',
-          },
-          {
-            type: "string",
-            name: "byline",
-            label: "Byline",
-          },
-          {
-            type: "string",
-            name: "subheading",
-            label: "Subheading",
-            ui: {
-              component: "textarea"
-            }
-          },
-          {
-            type: "string",
-            name: "description",
-            label: "Description",
-            ui: {
-              component: "textarea"
-            }
-          },
-          {
-            label: "Hero Buttons",
-            name: "heroLinks",
+            label: "Navigation Buttons",
+            name: "navLinks",
             type: "object",
             list: true,
             ui: {
@@ -101,32 +75,65 @@ export default defineConfig({
             ]
           },
           {
-            label: "Navigation Buttons",
-            name: "navLinks",
+            type: 'number',
+            name: 'year',
+            label: 'Year',
+          },
+          {
             type: "object",
-            list: true,
-            ui: {
-              // This allows the customization of the list item UI
-              // Data can be accessed by item?.<Name of field>
-              itemProps: (item) => {
-                return { label: `${item?.name}  ( ${item?.url} ) `}
-              },
-              // Setting a default will auto-populate new items with the given values
-              defaultItem: {
-                url: "https://www.facebook.com/",
-                name: "Facebook",
-              }
-            },
+            name: "hero",
+            label: "Hero",
             fields: [
               {
-                label: "Name",
-                name: "name",
-                type: "string"
+                type: "string",
+                name: "byline",
+                label: "Byline",
               },
               {
-                label: "URL",
-                name: "url",
-                type: "string"
+                type: "string",
+                name: "subheading",
+                label: "Subheading",
+                ui: {
+                  component: "textarea"
+                }
+              },
+              {
+                type: "string",
+                name: "description",
+                label: "Description",
+                ui: {
+                  component: "textarea"
+                }
+              },
+              {
+                label: "Hero Buttons",
+                name: "heroLinks",
+                type: "object",
+                list: true,
+                ui: {
+                  // This allows the customization of the list item UI
+                  // Data can be accessed by item?.<Name of field>
+                  itemProps: (item) => {
+                    return { label: `${item?.name}  ( ${item?.url} ) `}
+                  },
+                  // Setting a default will auto-populate new items with the given values
+                  defaultItem: {
+                    url: "https://www.facebook.com/",
+                    name: "Facebook",
+                  }
+                },
+                fields: [
+                  {
+                    label: "Name",
+                    name: "name",
+                    type: "string"
+                  },
+                  {
+                    label: "URL",
+                    name: "url",
+                    type: "string"
+                  },
+                ]
               },
             ]
           },

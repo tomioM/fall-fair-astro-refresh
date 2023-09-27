@@ -48,20 +48,20 @@ export const Main = (props) => {
               alt=""
               className="_wf-logo"
             />
-            <div className="qf-text" data-tina-field={tinaField(page, 'byline')}>{page.byline}<br /></div>
+            <div className="qf-text" data-tina-field={tinaField(page, 'byline')}>{page.hero.byline}<br /></div>
           </div>
           <h1 id="heading-title" className="hero-heading" data-tina-field={tinaField(page, 'title')}>
             {page.title}
           </h1>
           <h3 className="sub-heading" data-tina-field={tinaField(page, 'subheading')}>
-            {page.subheading}
+            {page.hero.subheading}
           </h3>
           <p className="paragraph" data-tina-field={tinaField(page, 'description')}>
-            {page.description}
+            {page.hero.description}
           </p>
           <div>
             {
-              page.heroLinks?.map(heroLink => (
+              page.hero.heroLinks?.map(heroLink => (
                 <a
                   data-w-id="29ee5900-ec6d-1893-983c-4736b43dade9"
                   href={heroLink?.url}
